@@ -1,79 +1,9 @@
-*{
-    margin: 0px;
-    /* padding: 0px; */
-}
 
 body{
-    margin-left: 10px;
-    margin-right: 10px;
-    background-image: url("background.svg");
-    /* background-repeat:no-repeat; */
-    background-position: center center;
+    /* background-image: url("/assets/images/back-aeronave.png");
+    background-position: 0cm 2cm;
     background-size: cover;
+    background-color: rgb(146, 29, 29); */
+    margin: 0;
 }
 
-.flex{
-    display: flex;
-    flex-direction: row;
-}
-
-.center{
-    justify-content: center;
-}
-
-.column{
-    flex-direction: column;
-}
-
-.title-main{
-    align-self: center;
-}
-
-#image{
-    height: 10vh;
-}
-
-.list{
-    color: white;
-    justify-content: space-around;
-    text-decoration: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.list li:hover{
-    background-color: rgb(124, 151, 196);
-    color: white;
-    padding: 8px;
-    border-radius: 3px;
-
-}
-
-.list a{
-    color: black;
-    font-size: 18px;
-}
-
-.container-header ul{
-    background-color: aqua;
-    border-radius: 5px;
-}
-
-.intro #curiosidade{
-    line-height: 1.5;
-}
-
-.intro{
-    border: 1px solid black;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.intro h3{
-    font-size: 23px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}

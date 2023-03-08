@@ -7,44 +7,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <link rel="stylesheet" href="../assets/css/style.css?v=3">
+    <link rel="stylesheet" href="../assets/css/style_main.css">
     <title>Indústria Aeronáutica </title>
 </head>
 <body>
-    <div class="container-header flex column">
+    <div class="header">
 
-        <div class="flex center"> 
-            <!-- Tag para imagem -->
-            <img src="../assets/images/logo.png" alt="logo" id="image" /><br>
+        <!-- Tag para imagem -->
+        <img src="../assets/images/logo.png" alt="logo" class="header-image" /><br>
             
-            <!-- Tag para titulo -->
-            <h1 class="title-main">Gestão de Processos Aeronáuticos</h1>
-        </div>
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Processos Aeronáuticos</h1>
 
         <!-- Tag de lista não ordernada -->
-        <ul class="list flex row">
-            <li><a href="file1.html">Home </a></li>
-            <li><a href="file2.html">Form </a></li>
-            <li><a href="file3.html">Tables</a></li>
-            <li><a href="file4.html">Images</a></li>
-            <li><a href="file5.html">Menu</a></li>
+        <nav class="header-links">
+            <a href="file1.html">Home </a>
+            <a href="file2.html">Form </a>
+            <a href="file3.html">Tables</a>
+            <a href="file4.html">Images</a>
+            <a href="file5.html">Menu</a>
         </ul>
     </div>
 
+    <main class="main-content">
 
-    <nav class="intro flex column">
+            <h3 id="main-content-descr">Plataforma para gereciamento de processos com aeronaves</h3>
 
-        <h3>Plataforma para gereciamento de processos com aeronaves</h3>
+            <!-- Tag para legenda-->
+            <label for="curiosidade"><strong>Curiosidades</strong></label><br>
 
-        <!-- Tag para legenda-->
-        <label for="curiosidade"><strong>Curiosidades</strong></label><br>
+            <!-- Tag para paragrafo -->
+            <ol>
+                <li><strong>As luzes internas se apagam para preparar para um acidente</strong><br>
+                    Sim, é isso mesmo. Por mais que acidentes aéreos sejam raríssimos, os procedimentos de segurança são pensados sempre no pior cenário, 
+                    por isso as luzes se apagam quando o avião se aproxima da aterrissagem e durante quase todo o voo.
+                </li>
+                <li><strong>O oxigênio nas máscaras só dura 15 minutos</strong><br>
+                    Se a cabine despressurizar, máscaras de oxigênio cairão automaticamente, puxe as tiras para ajustar, prenda sua máscara cobrindo nariz e a boca e respire normalmente.
+                    Não se preocupe, esse tempo é mais que suficiente para que o piloto diminua a altitude da aeronave até uma altura que seja segura e as pessoas consigam respirar.
+                </li>
+                <li><strong>Tem sarcófago em algumas aeronaves</strong><br>
+                    Fique tranquilo, o avião não está voando por aí carregando uma múmia dentro. Sarcófago é o nome dado ao local secreto destinado ao descanso de aeromoças e pilotos.
+                    É onde eles fazem pequenos revezamentos para descansos em voos longos.
+                </li>
+            </ol>
+    </main>
 
-        <!-- Tag para paragrafo -->
-        <p id="curiosidade">
-            O avião pode ser atingido por raios, independentemente da posição, como no caso do jato da Delta Air Lines estacionado na pista, registrado em agosto.
-            Os passageiros dificilmente podem notar o contato e, claro, jamais serão eletrocutados, mas a fuselagem pode ser danificada.
-        </p>
-    </nav>
+    <footer class="foo">
+        <p>© 2023  - Dev. Luiz Henrique Bispo</p>
+    </footer>
 
 </body>
 </html>
