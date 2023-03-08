@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+.main-content nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    gap: 10px;
+}
+
+/* Estilizando tabela voos */
+.main-content table{
+    border: 1px solid black !important;
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.main-content-voo{
+    background-color: #115677;
+}
+
+.main-content-aeronave{
+    background-color: #104b66;
+}
+
+.main-content-ori{
+    background-color: #0b3548;
+}
+
+.main-content table td, th {
+    border-top: 1px solid black;
+}
+
+
+/* Estilizando fonte e cor do titulo */
+#main-title{
+    font-family: 'Sarala', sans-serif;
+    font-size: 27px;
+    color: #b5e7ff;
+    font-weight: 600;
+}

@@ -7,107 +7,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style_main.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
     <title>Indústria Aeronáutica </title>
 </head>
 <body>
-    <h1>Gestão de Processos Aeronáuticos</h1>
+    <div class="header">
 
-    <ul>
-        <li><a href="file1.html">Home </a></li>
-        <li><a href="file2.html">Form </a></li>
-        <li><a href="file3.html">Tables</a></li>
-        <li><a href="file4.html">Images</a></li>
-        <li><a href="file5.html">Menu</a></li>
-    </ul>
-    <h3>Plataforma para gereciamento de processos com aeronaves</h3>
-    
-
-    <!-- Tag nav para delimitação de bloco-->
-    <nav>
-        <h4>Informações sobre Voos</h4>
-
-        <!-- Tag table para marcação de tabela -->
-        <table border="1" bgcolor="#f9f2e7">
-            <!-- Tag thead para bloco de cabecalho/ tr para lihas/ td para colunas -->
-            <thead>
-                <tr>
-                    <th>Codigo-Voo</th>
-                    <th>Aeroporto</th>
-                </tr>
-            </thead>
+        <!-- Tag para imagem -->
+        <img src="../assets/images/logo.png" alt="logo" class="header-image" /><br>
             
-            <!-- Tag tdbody para bloco do corpo da tabela -->
-            <tdbody>
-                <tr>
-                    <td>002</td>
-                    <td>Recife Airport</td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td>Fortaleza Airport</td>
-                </tr>
-            </tdbody>
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Processos Aeronáuticos</h1>
 
-            <!-- Tag tfoot para bloco de rodape -->
-            <tfoot>
-                <tr>
-                    <td colspan="3" align="center">T1</td>
-                </tr>
-            </tfoot>
-        </table>
+        <!-- Tag de lista não ordernada -->
+        <nav class="header-links">
+            <a href="file1.html">Home </a>
+            <a href="file2.html">Form </a>
+            <a href="file3.html">Tables</a>
+            <a href="file4.html">Images</a>
+            <a href="file5.html">Menu</a>
+        </ul>
+    </div>
 
-        <br><br>
-        <table border="2" bgcolor="#40c0cb">
-            <thead>
-                <tr>
-                    <th>Companhia Aérea</th>
-                    <th>Aeronave</th>
-                </tr>
-            </thead>
-            
-            <tdbody>
-                <tr>
-                    <td>Latam</td>
-                    <td>Airbus A380</td>
-                </tr>
-                <tr>
-                    <td>Gol</td>
-                    <td>Boeing 777</td>
-                </tr>
-            </tdbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" align="center">T2</td>
-                </tr>
-            </tfoot>
-        </table>
+    <main class="main-content">
+        <!-- Tag nav para delimitação de bloco-->
+        <nav>
+            <h4 id="main-title">Informações sobre Voos</h4>
 
-        <br><br>
-        <table border="2" bgcolor="#00a8c6">
-            <thead>
-                <tr>
-                    <th>Origem</th>
-                    <th>Destino</th>
-                </tr>
-            </thead>
-            
-            <tdbody>
-                <tr>
-                    <td>Brasília-DF</td>
-                    <td>Recife-PE</td>
-                </tr>
-                <tr>
-                    <td>Fortaleza-CE</td>
-                    <td>São Paulo-SP</td>
-                </tr>
-            </tdbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" align="center">T3</td>
-                </tr>
-            </tfoot>
-        </table>
-    </nav>
+            <!-- Tag table para marcação de tabela -->
+            <table class="main-content-voo">
+                <!-- Tag thead para bloco de cabecalho/ tr para lihas/ td para colunas -->
+                <thead>
+                    <tr>
+                        <th>Codigo-Voo</th>
+                        <th>Aeroporto</th>
+                    </tr>
+                </thead>
+                
+                <!-- Tag tdbody para bloco do corpo da tabela -->
+                <tdbody>
+                    <tr>
+                        <td>002</td>
+                        <td>Recife Airport</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Fortaleza Airport</td>
+                    </tr>
+                </tdbody>
+
+                <!-- Tag tfoot para bloco de rodape -->
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">T1</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br><br>
+            <table class="main-content-aeronave">
+                <thead>
+                    <tr>
+                        <th>Companhia Aérea</th>
+                        <th>Aeronave</th>
+                    </tr>
+                </thead>
+                
+                <tdbody>
+                    <tr>
+                        <td>Latam</td>
+                        <td>Airbus A380</td>
+                    </tr>
+                    <tr>
+                        <td>Gol</td>
+                        <td>Boeing 777</td>
+                    </tr>
+                </tdbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">T2</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br><br>
+            <table class="main-content-ori">
+                <thead>
+                    <tr>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                    </tr>
+                </thead>
+                
+                <tdbody>
+                    <tr>
+                        <td>Brasília-DF</td>
+                        <td>Recife-PE</td>
+                    </tr>
+                    <tr>
+                        <td>Fortaleza-CE</td>
+                        <td>São Paulo-SP</td>
+                    </tr>
+                </tdbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">T3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </nav>
+    </main>
+
+    <footer class="foo">
+        <p>© 2023  - Dev. Luiz Henrique Bispo</p>
+    </footer>
 
 </body>
 </html>
