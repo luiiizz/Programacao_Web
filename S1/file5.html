@@ -8,62 +8,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indústria Aeronáutica </title>
+    <link rel="stylesheet" href="../assets/css/style_main.css">
 </head>
 <body>
-    <h1>Gestão de Processos Aeronáuticos</h1>
+    <div class="header">
 
-    <ul>
-        <li><a href="file1.html">Home </a></li>
-        <li><a href="file2.html">Form </a></li>
-        <li><a href="file3.html">Tables</a></li>
-        <li><a href="file4.html">Images</a></li>
-        <li><a href="file5.html">Menu</a></li>
-    </ul>
+        <!-- Tag para imagem -->
+        <img src="../assets/images/logo.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Processos Aeronáuticos</h1>
+
+        <!-- Tag de lista não ordernada -->
+        <nav class="header-links">
+            <a href="file1.html">Home </a>
+            <a href="file2.html">Form </a>
+            <a href="file3.html">Tables</a>
+            <a href="file4.html">Images</a>
+            <a href="file5.html">Menu</a>
+        </ul>
+    </div>
+
+    <main class="main-content">
     
-    <h3>Plataforma para gereciamento de processos com aeronaves</h3>
-    
-    <!-- Tag para formulario de pesquisa -->
-    <form method="get" action="file5.html">
-        <label for="pesq"><strong>O que está procurando?</strong></label>
-        <input type="text" name="pesq" id="pesq">
-        <input type="submit" value="Entrar">
-    </form>
-
-    <!-- Tag para imagem -->
-    <img src="../assets/images/logo.png" alt="logo" />
-
-    <!-- Tag section para delimitação de bloco-->
-    <section>
-        <h4>Tabela de Aeronaves</h4>
-
-        <!-- Tags table, tr,td para estrutura da tabela -->
-        <table border="2" bgcolor="lightblue">
-            <tr>
-                <td>Nome</td>
-                <td>Capacidade(Pessoas)</td>
-            </tr>
-            <tr>
-                <td>Boeing 747</td>
-                <td>585 </td>
-            </tr>
-            <tr>
-                <td>Airbus A380</td>
-                <td>585</td>
-            </tr>
-            <tr>
-                <td>Airbus A340</td>
-                <td>380  </td>
-            </tr>
-            <tr>
-                <td>Ilyushin Il-96</td>
-                <td>350 </td>
-            </tr>
-        </table>
-
+        <h3 id="main-content-descr">Plataforma para gereciamento de processos com aeronaves</h3>
         
+        <div class="menu">
+            <div>
+                <!-- Tag para formulario de pesquisa -->
+                <form method="get" action="file5.html">
+                    <label for="pesq"><strong>O que está procurando?</strong></label>
+                    <input type="text" name="pesq" id="pesq">
+                    <button type="submit" value="Entrar"><img src="../assets/images/pesq.png"></button>
+                </form>
+                
+                <p class="text">
+                    <strong>É possível que uma aeronave ande de ré?</strong>
+                    Sim, é possível. <br><br>Na verdade, os aviões não possuem uma marcha à ré, 
+                    mas conseguem se movimentar para trás a partir do uso reverso dos motores, os quais formam uma <br>concha em sua parte traseira e inverte a direção do fluxo de ar.
+                </p>
+            </div>
 
-    </section>
-       
+        <!-- Tag para imagem -->
+        <img id="men" src="../assets/images/img-menu.png" alt="logo" />
+
+        </div>
+        <!-- Tag section para delimitação de bloco-->
+        <section>
+
+            <!-- Tags table, tr,td para estrutura da tabela -->
+            <table class="aero">
+                <tr>
+                    <td>Nome</td>
+                    <td>Capacidade(Pessoas)</td>
+                </tr>
+                <tr>
+                    <td>Boeing 747</td>
+                    <td>585 </td>
+                </tr>
+                <tr>
+                    <td>Airbus A380</td>
+                    <td>585</td>
+                </tr>
+                <tr>
+                    <td>Airbus A340</td>
+                    <td>380  </td>
+                </tr>
+                <tr>
+                    <td>Ilyushin Il-96</td>
+                    <td>350 </td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+
+    <footer class="foo">
+        <p>© 2023  - Dev. Luiz Henrique Bispo</p>
+    </footer>
 
 </body>
 </html>

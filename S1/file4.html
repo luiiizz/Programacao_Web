@@ -8,35 +8,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indústria Aeronáutica </title>
+    <link rel="stylesheet" href="../assets/css/style_main.css">
 </head>
 <body>
-    <h1>Gestão de Processos Aeronáuticos</h1>
+    <div class="header">
 
-    <ul>
-        <li><a href="file1.html">Home </a></li>
-        <li><a href="file2.html">Form </a></li>
-        <li><a href="file3.html">Tables</a></li>
-        <li><a href="file4.html">Images</a></li>
-        <li><a href="file5.html">Menu</a></li>
-    </ul>
-    <h3>Plataforma para gereciamento de processos com aeronaves</h3>
-    
+        <!-- Tag para imagem -->
+        <img src="../assets/images/logo.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Processos Aeronáuticos</h1>
 
-    <!-- Tag section para delimitação de bloco-->
-    <section>
-        <h4>Álbum</h4>
-            <!-- Tag label - Legendas descritivas para imagens -->
-            <label for="logo"> Logo</label>
-            <!-- Tag  img para retorno de imagens, com seus repectivos atributos -->
-            <img src="/assets/images/logo.png" alt="logo" height="200" align="center"/><br>
+        <!-- Tag de lista não ordernada -->
+        <nav class="header-links">
+            <a href="file1.html">Home </a>
+            <a href="file2.html">Form </a>
+            <a href="file3.html">Tables</a>
+            <a href="file4.html">Images</a>
+            <a href="file5.html">Menu</a>
+        </ul>
+    </div>
 
-            <label for="airbus"> Airbus A380</label>
-            <img src="/assets/images/AirbusA380_2.png" alt="airbus" height="200" align="center"/><br><br><br>
+    <main class="main-content padd">
+        <!-- Tag section para delimitação de bloco-->
+        <section id="sec-images">
+            <div>
+            <h4 id="main-title" >Aeronaves</h4>
 
-            <label for="tpng"> TPNG</label>
-            <img src="/assets/images/back-aeronave.png" alt="tpng" height="200" align="center"/><br>
-    </section>
+                <!-- Tag label - Legendas descritivas para imagens -->
+                <label for="logo"> Boeing 747</label>
+                <p class="text">Boeing 747 é uma aeronave a jato usada no âmbito civil e militar para transporte de passageiros e de carga, 
+                    referida com frequência como Jumbo Jet ou Queen of the Skies (Rainha dos Céus).
+                </p>
+                <!-- Tag  img para retorno de imagens, com seus repectivos atributos -->
+                <img src="/assets/images/Boeing.png" alt="logo" height="200" align="center"/><br>
+
+                <label for="airbus"> Airbus A380</label>
+                <p class="text">O Airbus A380 é uma aeronave widebody quadrimotor a jato para o transporte de passageiros, fabricado pela EADS Airbus.
+                     É o maior avião comercial do mundo. Os aeroportos em que opera tiveram suas instalações adaptadas para acomodá-lo com segurança.
+                </p>
+                <img src="/assets/images/AirbusA380_2.png" alt="airbus" height="200" align="center"/><br><br><br>
+
+                <label for="tpng"> Antonov AN-225 </label>
+                <p class="text">
+                    O Antonov An-225 Mriya, chamado pela OTAN de Cossack, foi uma aeronave de transporte cargueiro estratégica, a qual foi produzida durante a década de 1980 pela Antonov Design Bureau, 
+                    na então RSS Ucraniana (atualmente, na Ucrânia). O Antonov An-225 Mriya era a maior aeronave de asa fixa do mundo. 
+                </p>
+                <img src="/assets/images/Antonov.png" alt="tpng" height="200" align="center"/><br>
+            </div>
+            
+            <!-- <img id="aer-lateral" src="/assets/images/lateral-page.png" alt="Aeronave-lateral" height="200" align="center"/> -->
+        </section>
+
        
+
+    </main>
+    
+    <footer class="foo">
+        <p>© 2023  - Dev. Luiz Henrique Bispo</p>
+    </footer>
 
 </body>
 </html>
