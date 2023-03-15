@@ -108,3 +108,10 @@ header{
   border-radius: 20px;
   padding: 20px;
 }
+
+
+.encontre{
+  background-color:#00c7c7 !important;
+  width: 230px !important;
+  white-space: nowrap;
+}

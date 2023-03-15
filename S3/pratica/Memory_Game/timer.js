@@ -18,7 +18,15 @@ const contarTempo = (duracao, display) => {
         display.textContent = minutos + ":" + segundos;
         // return console.log(minutos + ":" + segundos);
 
-        if(--timer < 0){
+        --timer;
+
+        // Se timer estiver nos 10 segundo finais
+        if(timer < 10 && timer >= 0){
+            display.style.color = 'red';
+            display.style.fontWeight = '600';
+        }
+        // Se timer acabar
+        else if( timer < 0){
 
             header.style.display = 'none';
             section.style.display = 'none';
@@ -41,9 +49,8 @@ const contarTempo = (duracao, display) => {
  // Função de mensagem incial para começar jogo
  const changeTextButton = () => {
 
-    btStart.textContent = 'ENCONTRE!';
-    btStart.style.background = '#00c7c7';
-
+    btStart.textContent = 'ENCONTRE OS PARES!!!';
+    btStart.classList.add('encontre');
     return;
 }
 
@@ -65,7 +72,7 @@ function retonar() {
 // Se acionado o botão start
 btStart.addEventListener('click', () =>{
 
-    var duracao = 3 * 60;
+    var duracao = 70;
 
     var display = document.getElementById('timer');
 
