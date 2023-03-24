@@ -1,0 +1,40 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 2px solid black;
+  }
+
+  .cell {
+    width: 98px;
+    height: 98px;
+    border: 1px solid black;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .x {
+    color: red;
+  }
+
+  .o {
+    color: blue;
+  }
+
+  .player .winner{
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+  }
+
+
+  .winner button {
+    margin-left: 10px;
+    background-color: rgb(0, 131, 202) !important;
+    color: white;
+    font-weight: bold;
+  }
