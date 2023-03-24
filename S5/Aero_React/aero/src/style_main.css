@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* Inicializando todos elementos da pagina com definições iniciais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Configurando fonte e fundo para corpo da pagina */
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #23232f 16.62%, #527c8e 85.61%); 
+}
+
+/* Estilizando cabecalho */
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Dimensionando imagem de logo */
+.header-image{
+    height: 10vh;
+    border-radius: 50%;
+}
+
+/* Dimensionando grupo de links */
+.header-links{
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilizando links */
+.header-links a{
+    color: #FFF2E7;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Estilizando fonte e cor do titulo */
+#header-title{
+    font-family: 'Sarala', sans-serif;
+    font-size: 27px;
+    color: #b5e7ff;
+    font-weight: 600;
+}
+
+
+/* Estilizando content principal de informações */
+.main-content{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+
+/* Estilizando descrição da plataforma */
+#main-content-descr{
+    font-family: 'Sarala', sans-serif;
+    color:#FFF2E7;
+    font-weight: 100;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+/* Estilizando label curiosidades */
+.main-content label{
+    font-family: 'Sarala', sans-serif;
+    color:#c5e1fc;
+    font-weight: 100;
+}
+
+
+/* Estilizando texto distribuidos na lista ordenada */
+.main-content ol,li, .text {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ECD6C4;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Estilizando tag h4 para titulo principal */
+#main-title {
+    font-family: 'Sarala', sans-serif;
+    font-size: 27px;
+    color: #b5e7ff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estilizando rodapé */
+.foo{
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* Retirando padding lateral */
+.padd{
+    padding-right: 0;
+}
+
+/* Formatando sessão de imagens */
+#sec-images{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Estilização para file 5 */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Estilizando formulario */
+.menu form{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    height: 50px;
+    margin-left: 50px;
+}
+
+    .menu form input[type="text"]{
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 10cm;
+    }
+
+    /* Estilizando botão de pesquisa */
+    .menu button{
+        background:#0d5574 85.61%; 
+        border: none;
+        border-radius: 40%;
+        cursor: help;
+    }
+
+    .menu button img {
+        height: 26px;
+    }
+
+    
+/* Estilizando imagem do men na lateral */
+.menu #men{
+    height: 250px;
+    float: right;;
+}
+
+/* Estilizando tabela inferior */
+.main-content .aero{
+    border: 1px solid black !important;
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    background-color: #0b3548;
+    width: 80%;
+    border-radius: 8px;
+}
+
+    .main-content .aero td, th {
+        border-top: 1px solid black;
+    }
+
+
+/* Direcionando texto em p */
+.menu p{
+    margin-top: 30px;
+}
+
+    .menu p strong{
+        margin-left: 20px;
+    }
