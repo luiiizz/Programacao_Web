@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indústria Aeronáutica </title>
     <link rel="stylesheet" href="../assets/css/style_main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
 </head>
 <body>
-    <div class="header">
+    <div class="navbar header">
 
         <!-- Tag para imagem -->
         <img src="../assets/images/logo.png" alt="logo" class="header-image" /><br>
@@ -20,7 +21,7 @@
         <h1 id="header-title">Processos Aeronáuticos</h1>
 
         <!-- Tag de lista não ordernada -->
-        <nav class="header-links">
+        <nav class="d-flex align-items-center header-links">
             <a href="file1.html">Home </a>
             <a href="file2.html">Form </a>
             <a href="file3.html">Tables</a>
@@ -29,7 +30,7 @@
         </ul>
     </div>
 
-    <main class="main-content padd">
+    <main class="container main-content padd">
         <!-- Tag section para delimitação de bloco-->
         <section id="sec-images">
             <div>
@@ -41,20 +42,20 @@
                     referida com frequência como Jumbo Jet ou Queen of the Skies (Rainha dos Céus).
                 </p>
                 <!-- Tag  img para retorno de imagens, com seus repectivos atributos -->
-                <img src="/assets/images/Boeing.png" alt="logo" height="200" align="center"/><br>
+                <img class="img-fluid rounded-circle" src="/assets/images/Boeing.png" alt="logo" height="200" align="center"/><br>
 
                 <label for="airbus"> Airbus A380</label>
                 <p class="text">O Airbus A380 é uma aeronave widebody quadrimotor a jato para o transporte de passageiros, fabricado pela EADS Airbus.
                      É o maior avião comercial do mundo. Os aeroportos em que opera tiveram suas instalações adaptadas para acomodá-lo com segurança.
                 </p>
-                <img src="/assets/images/AirbusA380_2.png" alt="airbus" height="200" align="center"/><br><br><br>
+                <img class="img-fluid rounded-circle" src="/assets/images/AirbusA380_2.png" alt="airbus" height="200" align="center"/><br><br><br>
 
                 <label for="tpng"> Antonov AN-225 </label>
                 <p class="text">
                     O Antonov An-225 Mriya, chamado pela OTAN de Cossack, foi uma aeronave de transporte cargueiro estratégica, a qual foi produzida durante a década de 1980 pela Antonov Design Bureau, 
                     na então RSS Ucraniana (atualmente, na Ucrânia). O Antonov An-225 Mriya era a maior aeronave de asa fixa do mundo. 
                 </p>
-                <img src="/assets/images/Antonov.png" alt="tpng" height="200" align="center"/><br>
+                <img class="img-fluid rounded-circle" src="/assets/images/Antonov.png" alt="tpng" height="200" align="center"/><br>
             </div>
             
             <!-- <img id="aer-lateral" src="/assets/images/lateral-page.png" alt="Aeronave-lateral" height="200" align="center"/> -->
@@ -67,6 +68,6 @@
     <footer class="foo">
         <p>© 2023  - Dev. Luiz Henrique Bispo</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
