@@ -1,4 +1,5 @@
 import Header from "../Header";
+import Footer from "../Footer";
 import './style2.css';
 
 const Form = () => {
@@ -42,7 +43,7 @@ const Form = () => {
             </form>
         </nav>
     </main>
-    
+    <Footer/>
 </div>
 }
 

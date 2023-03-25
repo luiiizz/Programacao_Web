@@ -1,10 +1,11 @@
 import Header from "../Header";
+import Footer from "../Footer";
 
 const Home = () => {
     return <div>
     
     <Header/>
-    
+
     <main className="container main-content">
 
         <h3 id="main-content-descr">Plataforma para gereciamento de processos com aeronaves</h3>
@@ -29,6 +30,8 @@ const Home = () => {
         </ol>
     
     </main>
+
+    <Footer/>
 </div>
 }
 

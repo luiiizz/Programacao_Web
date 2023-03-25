@@ -14,9 +14,9 @@ const Header = () => {
     <nav class="d-flex align-items-center header-links">
         <Link to="/"><a href="file2.html">Home </a></Link>
         <Link to="/form"><a href="file2.html">Form </a></Link>
-        <a href="file3.html">Tables</a>
-        <a href="file4.html">Images</a>
-        <a href="file5.html">Menu</a>
+        <Link to="/tables"><a href="file3.html">Tables</a></Link>
+        <Link to="/images"><a href="file4.html">Images</a></Link>
+        <Link to="/menu"><a href="file5.html">Menu</a></Link>
     </nav>
 
     </div>
