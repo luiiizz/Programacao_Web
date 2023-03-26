@@ -1,0 +1,72 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Henrique Bispo 
+DATA: 26/03/2023-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Paciente</title>
+
+  <!-- Importando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style_main.css">
+
+  <!-- Importando Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar header">
+
+        <!-- Tag para imagem -->
+        <img src="../assets/images/clinica.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Clínica L&L</h1>
+
+        <!-- Tag de lista não ordernada -->
+        <nav class="d-flex align-items-center header-links">
+            <a href="cadastro.html">Cadastro</a>
+            <a href="agendamento.html">Agendar</a>
+            <a href="consulta_pacientes.html">Pacientes</a>
+            <a href="consulta_agenda.html">Agendamentos</a>
+            <a href="lista_medicamento.html">Medicamentos</a>
+        </ul>
+    </div>
+
+
+  <div class="container">
+    <h2>Cadastro de Paciente</h2>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite o nome do paciente">
+      </div>
+      <div class="form-group">
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" class="form-control" id="data-nascimento">
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF do paciente">
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço do paciente">
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" class="form-control" id="telefone" placeholder="Digite o telefone do paciente">
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+</body>
+</html>

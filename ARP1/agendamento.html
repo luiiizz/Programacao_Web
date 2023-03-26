@@ -1,0 +1,90 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Henrique Bispo 
+DATA: 26/03/2023-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Consulta</title>
+
+
+  <!-- Importando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
+  <link rel="stylesheet" href="style_main.css">
+
+  <!-- Importando Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar header">
+
+        <!-- Tag para imagem -->
+        <img src="../assets/images/clinica.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Clínica L&L</h1>
+
+        <!-- Tag de lista não ordernada -->
+        <nav class="d-flex align-items-center header-links">
+            <a href="cadastro.html">Cadastro</a>
+            <a href="agendamento.html">Agendar</a>
+            <a href="consulta_pacientes.html">Pacientes</a>
+            <a href="consulta_agenda.html">Agendamentos</a>
+            <a href="lista_medicamento.html">Medicamentos</a>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <h2>Agendamento de Consulta</h2>
+        <form>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" class="form-control" id="data">
+        </div>
+        <div class="form-group">
+            <label for="horario">Horário:</label>
+            <select class="form-control" id="horario">
+            <option value="">Selecione um horário</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="medico">Médico:</label>
+            <select class="form-control" id="medico">
+            <option value="">Selecione um médico</option>
+            <option value="Dr. João">Dr. João</option>
+            <option value="Dra. Maria">Dra. Maria</option>
+            <option value="Dr. Pedro">Dr. Pedro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tipo-consulta">Tipo de Consulta:</label>
+            <select class="form-control" id="tipo-consulta">
+            <option value="">Selecione um tipo de consulta</option>
+            <option value="Clínico Geral">Clínico Geral</option>
+            <option value="Dermatologista">Dermatologista</option>
+            <option value="Cardiologista">Cardiologista</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Agendar</button>
+        </form>
+    </div>
+
+</body>
+</html>

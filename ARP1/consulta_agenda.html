@@ -1,0 +1,79 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Henrique Bispo 
+DATA: 26/03/2023-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Agendamentos</title>
+
+  <!-- Importando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style_main.css">
+
+  <!-- Importando Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar header">
+
+        <!-- Tag para imagem -->
+        <img src="../assets/images/clinica.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Clínica L&L</h1>
+
+        <!-- Tag de lista não ordernada -->
+        <nav class="d-flex align-items-center header-links">
+            <a href="cadastro.html">Cadastro</a>
+            <a href="agendamento.html">Agendar</a>
+            <a href="consulta_pacientes.html">Pacientes</a>
+            <a href="consulta_agenda.html">Agendamentos</a>
+            <a href="lista_medicamento.html">Medicamentos</a>
+        </ul>
+    </div>
+
+  <div class="container">
+    <h2>Consulta de Agendamentos</h2>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Médico</th>
+          <th>Data</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João da Silva</td>
+          <td>Dr. Carlos</td>
+          <td>01/04/2023</td>
+          <td>10:00</td>
+        </tr>
+        <tr>
+          <td>Maria Souza</td>
+          <td>Dra. Ana</td>
+          <td>02/04/2023</td>
+          <td>14:30</td>
+        </tr>
+        <tr>
+          <td>Pedro Oliveira</td>
+          <td>Dr. Paulo</td>
+          <td>03/04/2023</td>
+          <td>16:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

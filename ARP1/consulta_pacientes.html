@@ -1,0 +1,90 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Henrique Bispo 
+DATA: 26/03/2023-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Pacientes</title>
+
+  <!-- Importando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style_main.css">
+
+  <!-- Importando Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar header">
+
+        <!-- Tag para imagem -->
+        <img src="../assets/images/clinica.png" alt="logo" class="header-image" /><br>
+            
+        <!-- Tag para titulo -->
+        <h1 id="header-title">Clínica L&L</h1>
+
+        <!-- Tag de lista não ordernada -->
+        <nav class="d-flex align-items-center header-links">
+            <a href="cadastro.html">Cadastro</a>
+            <a href="agendamento.html">Agendar</a>
+            <a href="consulta_pacientes.html">Pacientes</a>
+            <a href="consulta_agenda.html">Agendamentos</a>
+            <a href="lista_medicamento.html">Medicamentos</a>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <h2>Consulta de Pacientes</h2>
+
+        <div class="form-group">
+        <label for="busca">Buscar:</label>
+        <input type="text" class="form-control" id="busca" placeholder="Digite o nome ou CPF do paciente">
+        </div>
+
+        <table class="table table-hover">
+        <thead>
+            <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Data de Nascimento</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>João da Silva</td>
+            <td>123.456.789-00</td>
+            <td>01/01/1980</td>
+            <td>Rua A, 123</td>
+            <td>(11) 99999-9999</td>
+            </tr>
+            <tr>
+            <td>Maria Souza</td>
+            <td>987.654.321-00</td>
+            <td>02/02/1975</td>
+            <td>Rua B, 456</td>
+            <td>(11) 88888-8888</td>
+            </tr>
+            <tr>
+            <td>Pedro Oliveira</td>
+            <td>456.789.123-00</td>
+            <td>03/03/1990</td>
+            <td>Rua C, 789</td>
+            <td>(11) 77777-7777</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
