@@ -1,3 +1,8 @@
+/* Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Henrique Bispo 
+DATA: 26/03/2023 */
+
 // Coletando meus elementos
 var header = document.querySelector('header');
 var section = document.querySelector('section');
