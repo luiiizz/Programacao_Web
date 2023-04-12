@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .container {
+        border: 1px solid rgb(179, 167, 167);
+        padding: 5px;
+        width: 40vw;
+    }
+
+    .container-rigth {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        width: 40vw;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+    }
+
+
+    #enviar {
+        background-color: rgb(6, 188, 6);
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+
+    h2,
+    thead {
+        font-weight: 800;
+    }
+
+    table {
+        width: 100%;
+        border: none;
+    }
+
+    tr {
+        border: 1px solid black;
+    }
+
+    th{
+        text-align: left;
+        background-color: rgb(235, 228, 228);
+        padding: 5px 0px 5px 2px;
+    }
+
+    .loren{
+        margin-top: 20px;
+    }
+
+    .loren ul{
+        margin-left: 20px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Formulário </h2>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome...">
+
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+
+            <input type="checkbox" name="ativo" id="ativo">
+            <label for="ativo">Ativo</label><br>
+
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </div>
+
+    <div class="container-rigth">
+        <section class="container">
+            <h2>Tabela</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container loren">
+            <p>
+                Loren ipsum dolor sit amet,.........
+            </p>
+
+            <ul>
+                <li>Item da lista</li>
+            </ul>
+
+            <a href="#">LINK</a>
+        </section>
+    </div>
+</body>
+
+</html>
