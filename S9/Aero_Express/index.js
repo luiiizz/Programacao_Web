@@ -14,6 +14,10 @@ let passageiros = [
   { id: 2, nome: 'Lorrayne', cpf: '987.654.321-00', telefone: '(11) 8765-4321', email: 'lorrayne@gmail.com' }
 ];
 
+
+app.get('/', (req,res) => {
+  res.send("Bem vindo ao meu servidor");
+})
 /*Recuperar a lista de passageiros:
 Método: GET
 Rota: /api/passageiros
@@ -34,7 +38,11 @@ app.post('/api/passageiros', (req, res) => {
   const novoPassageiro = req.body;
   novoPassageiro.id = passageiros.length + 1;
   passageiros.push(novoPassageiro);
-  res.status(201).json(novoPassageiro);
+  res.status(201).json({
+    inputs: {
+      novoPassageiro
+    }
+  }); 
 });
 
 /*Recuperar informações de um passageiro específico por ID:
@@ -47,7 +55,11 @@ app.get('/api/passageiros/:passageiro_id', (req, res) => {
   const id = Number(req.params.passageiro_id);
   const passageiro = passageiros.find(p => p.id === id);
   if (passageiro) {
-    res.json(passageiro);
+    res.json({
+     passageiro: [
+      passageiro
+     ] 
+    });
   } else {
     res.status(404).send('Passageiro não encontrado');
   }
