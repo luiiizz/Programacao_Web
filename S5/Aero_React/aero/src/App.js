@@ -3,7 +3,7 @@ Disciplina de Programação Web
 Dev: Luiz Henrique Bispo 
 DATA: 26/03/2023 */
 
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import './style_main.css';
 import Home from './Components/Home';
