@@ -1,12 +1,14 @@
 const sequelize = require('../../database');
 
 const Passageiros = require('./Passageiros');
+const Aeronaves = require('./Aeronaves');
 
 const modelos = {
-    Passageiros
+    Passageiros,
+    Aeronaves
 };
 
 
-// sequelize.sync({ alter: true });
+sequelize.sync({ alter: true });
 
 module.exports = modelos;

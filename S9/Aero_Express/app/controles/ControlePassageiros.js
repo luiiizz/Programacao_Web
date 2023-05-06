@@ -50,7 +50,7 @@ class ControlePassageiros {
             });
 
             if (updatedRows) {
-                res.status(200).json({ message: 'Dados do passageiro atualizado' });
+                res.status(200).json({ message: 'Dados do passageiro atualizados' });
             } else {
                 res.status(404).json({ error: 'Passsageiro não encontrado' });
             }
