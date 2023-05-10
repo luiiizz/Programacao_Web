@@ -16,7 +16,7 @@ const Passageiros = sequelize.define('passageiros', {
     cpf: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      indexes:[{unique:true, fields: ['cpf']}]
     },
     telefone: {
       type: DataTypes.STRING,
@@ -25,6 +25,14 @@ const Passageiros = sequelize.define('passageiros', {
     email: {
       type: DataTypes.STRING,
       allowNull: true,
+    },
+    codigoAeronaveAtual: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'Aeronaves',
+        key: 'codigo'
+      }
     }
   });
   

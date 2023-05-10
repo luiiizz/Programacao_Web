@@ -1,6 +1,7 @@
 // const { passageiros } = require('../modelos/Passageiros');
 
 const {Aeronaves: Aeronaves} = require('../modelos');
+const {Passageiros: Passageiros} = require('../modelos');
 
 
 class ControleAeronaves{
@@ -11,7 +12,7 @@ class ControleAeronaves{
 
     async todos(req, res) {
         try {
-            const TodasAeronaves = await Aeronaves.findAll();   
+            const TodasAeronaves = await Aeronaves.findAll({include: {model: Passageiros, as: 'passageirosNesta'}});   
             res.status(200).json(TodasAeronaves);
         }catch (err) {
             res.status(500).json({ err: err.message});
@@ -30,7 +31,7 @@ class ControleAeronaves{
     async apenasUm(req, res) {
         try {
             const codigo = req.params.codigo;
-            const aernove = await Aeronaves.findByPk(codigo);
+            const aernove = await Aeronaves.findByPk(codigo, {include: {model: Passageiros, as: 'passageirosNesta'}});
 
             if (aernove) {
                 res.status(200).json(aernove);
