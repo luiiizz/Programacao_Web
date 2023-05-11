@@ -1,4 +1,5 @@
 const {Pacientes: Pacientes } = require('../models/');
+const {Agendas: Agendas } = require('../models/');
 
 
 class PacienteController{
@@ -8,7 +9,14 @@ class PacienteController{
 
     async listarPacientes(req, res) {
         try {
-            const todosPacientes = await Pacientes.findAll();   
+            const todosPacientes = await Pacientes.findAll(
+                {
+                    include: {model: Agendas, as: 'agendas'},  
+                    order: [
+                        ['id', 'DESC']
+                    ]
+                }
+            );   
             res.status(200).json(todosPacientes);
         }catch (err) {
             res.status(500).json({ err: err.message});
@@ -27,7 +35,7 @@ class PacienteController{
     async paciente(req, res) {
         try {
             const id = req.params.id;
-            const paciente = await Pacientes.findByPk(id);
+            const paciente = await Pacientes.findByPk(id, {include: {model: Agendas, as: 'agendas'}});
 
             if (paciente) {
                 res.status(200).json(paciente);
