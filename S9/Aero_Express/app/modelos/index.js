@@ -2,10 +2,12 @@ const sequelize = require('../../database');
 
 const Passageiros = require('./Passageiros');
 const Aeronaves = require('./Aeronaves');
+const Usuarios = require('./Usuarios');
 
 const modelos = {
     Passageiros,
-    Aeronaves
+    Aeronaves,
+    Usuarios,
 };
 
 
